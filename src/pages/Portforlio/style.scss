@@ -1,0 +1,111 @@
+
+@import '~assets/styles/constant';
+@import '~breakpoint-sass/stylesheets/_breakpoint';
+
+$image-width: 288px;
+$image-height: 162px;
+
+.gallery {
+	.item{
+		position: relative;
+		text-align: center;
+
+		img{
+			width: $image-width;
+			height: $image-height;
+			border: 5px solid #424242;
+			display: inline-block;
+		}
+
+		.mask{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+
+			width: $image-width;
+			height: $image-height;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: 1000;
+			opacity: 0;
+			transition: opacity 0.2s ease;
+
+			.mask-overlay{
+				position: relative;
+				text-align: center;
+				padding: 30px;
+				top: calc(50% - 90px);
+
+				.mask-text{
+					max-height: 80px;
+					color: white;
+					font-size: 14px;
+					margin-bottom: 10px;
+				}
+				
+				.mask-icon{
+					width: 44px;
+					height: 44px;
+					color: black;
+					font-size: 18px;
+					background-color: white;
+					padding: 10px;
+					border-radius: 50%;
+					border: 2px solid #666;
+					margin: 3px;
+					cursor: pointer;
+					display: inline-block;
+					line-height: 100%;
+					a { color: black; }
+				}
+			}
+		}
+		// for PC mouse hover
+		&:hover .mask{ opacity: 1; }
+		// for mobile touch tap
+		&:active .mask{ opacity: 1; }		
+	}
+
+	.item.popup{
+		animation: 0.2s ease 1 fade-in;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100vw;
+		height: 120vh;
+		background-color: black;
+		z-index: 1001;
+		img{
+			margin-top: calc(50vh - #{$image-height}/2 - 100px);
+			width: $image-width;
+			height: $image-height;
+			@include breakpoint($md){
+				margin-top: calc(50vh - #{$image-height}*2/2 - 60px);
+				width: $image-width*2;
+				height: $image-height*2;
+			}
+			@include breakpoint($lg){
+				margin-top: calc(50vh - #{$image-height}*3/2 - 100px);
+				width: $image-width*3;
+				height: $image-height*3;
+			}
+		}
+		.mask{
+			position: relative;
+			opacity: 1;
+			width: 100%;
+			.mask-text{
+				text-align: center;
+				color: white;
+				font-size: 14px;
+
+			}
+		}
+	}
+	.popup-close{
+		cursor: pointer;
+		font-size: 48px;
+		color: white;
+	}
+}

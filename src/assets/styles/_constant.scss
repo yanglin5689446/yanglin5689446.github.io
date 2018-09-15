@@ -1,0 +1,45 @@
+
+$theme-color: #3F51B5;
+$secondary-color: #E91E63;
+
+// breakpoints
+$sm: 567px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$cover-height: 400px;
+$cover-height-mobile: 50vh;
+$cover-avatar-height: 200px;
+$cover-avatar-height-mobile: 180px;
+$app-nav-height: 52px;
+$app-nav-height-mobile: 50vh;
+
+@keyframes fade-in {
+  	0% { opacity: 0.2; }
+  	100% { opacity: 1; }
+}
+
+@keyframes pop-up {
+  	0% { transform: scale(0, 0); } 
+  	100% { transform: scale(1, 1); } 
+
+}
+
+@keyframes dropdown {
+    0% { 
+      transform: translateY(-50%) scaleY(0); 
+    } 
+    100% { 
+      transform: translateY(0%) scaleY(1); 
+    } 
+}
+
+@keyframes shake-head {
+  	0% { transform: translateX(0px); }
+  	20% { transform: translateX(5px); }
+  	40% { transform: translateX(-5px); }
+  	60% { transform: translateX(5px); }
+  	80% { transform: translateX(-5px); }
+	100% { transform: translateX(0px); }
+}

@@ -1,0 +1,23 @@
+
+@import '~assets/styles/constant';
+
+.index {
+	.title{
+		letter-spacing: 2px;
+		padding: 5px;
+		padding-left: 24px;
+		border-left: 6px solid $secondary-color;
+	}
+	.social-button-link {
+		color: black;
+		transition: opacity 0.3s ease;
+		font-size: 40px;
+		letter-spacing: 24px;
+	
+		&:hover{
+			color: black;
+			opacity: 0.6;
+		}
+	}
+}
+

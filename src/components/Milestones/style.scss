@@ -1,0 +1,86 @@
+
+
+@import '~assets/styles/constant';
+@import '~breakpoint-sass/stylesheets/_breakpoint';
+
+.milestones {
+	animation: 0.5s cubic-bezier(0, 0.66, 0.25, 1) 0s 1 dropdown;
+	position: relative;
+	padding-bottom: 50px;
+	&:before{
+		content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    width: 4px;
+	    @include breakpoint($md){
+		    left: 50px;
+	    }
+	    background-color: #B5B5B5;
+	}
+	&:after {
+	    content: '';
+	    position: absolute;
+	    bottom: 0px;
+	    left: -15px;
+		width: 32px;
+	    height: 32px;	
+	    @include breakpoint($md){
+		    left: 36px;
+	    }
+
+	    border-radius: 50%;
+	    background-color: #EF6C00;
+	}
+	
+	.event{
+		position: relative;
+		padding-top: 24px;
+		padding-left: 30px;
+		h4 { 
+			display: block;
+			font-size: 20px; 
+			padding: 0px 0px 10px 0px;
+		}
+		span { 
+			color: rgba(0, 0, 0, 0.75);
+			font-size: 16px; 
+		}
+
+		@include breakpoint($md){
+			padding-left: 100px;	    	
+	    }
+		&:before {
+		    content: '';
+		    position: absolute;
+		    top: 30px;
+		    left: -7px;
+		    height: 20px;
+		    width: 20px;
+
+		    @include breakpoint($md){
+			    left: 42px;
+	    	}
+		    border-radius: 50%;
+		    background-color: #0c8763;
+		}
+	}
+	.event.big {
+		font-size: 18px;
+
+		h4 { font-size: 28px; }
+		span { font-size: 18px; }
+
+		&:before {
+		    left: -14px;
+		    width: 32px;
+		    height: 32px;	
+		    @include breakpoint($md){
+			    left: 36px;
+	    	}
+		    border: 5px solid #5b76c3;
+		    background-color: white;
+		}
+	}
+
+}

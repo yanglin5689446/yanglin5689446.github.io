@@ -1,0 +1,37 @@
+
+@import '~assets/styles/constant';
+@import '~breakpoint-sass/stylesheets/_breakpoint';
+
+.cover {
+	background-size: cover;
+	background-attachment: fixed;
+	@include breakpoint(0, $sm){ height: $cover-height-mobile;}
+	@include breakpoint($sm){ height: $cover-height; }
+	
+}
+
+.cover-wrapper{
+	@include breakpoint(0, $sm){
+		padding-top: calc(#{$cover-height-mobile} - #{$cover-avatar-height-mobile}/2);
+	}
+	@include breakpoint($sm){
+		padding-top: calc((#{$cover-height} - #{$cover-avatar-height})/2);
+	}
+	h3{
+		font-weight: 600;
+		opacity: 0.87;
+	}
+	h6{
+		font-weight: 600;
+		opacity: 0.54;
+	}
+	.name{
+		@include breakpoint(0, $sm){
+			margin-top: 5vh;
+		}
+		@include breakpoint($sm){
+			margin-top: 10px;
+		}
+	}
+}
+
