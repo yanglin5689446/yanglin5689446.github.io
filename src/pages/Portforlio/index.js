@@ -49,7 +49,7 @@ class GalleryItem  extends React.Component {
                 className={ this.state.popup ? 'mask-icon' : 'd-none' } 
                 onClick={ () => this.setState({ popup: false }) }
               >
-                <i className='fa fa-close'/>
+                <i className='fas fa-times'/>
               </div>
               {
                 this.props.link == null ||
@@ -60,7 +60,7 @@ class GalleryItem  extends React.Component {
               {
                 this.props.source == null ||
                 <div className='mask-icon'>
-                  <a href={ this.props.source } target='_blank'><i className="fa fa-git"/></a>
+                  <a href={ this.props.source } target='_blank'><i className="fab fa-git"/></a>
                 </div>
               }
             </div>
