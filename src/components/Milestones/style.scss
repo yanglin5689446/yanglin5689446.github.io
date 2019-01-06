@@ -24,7 +24,7 @@
 	    bottom: 0px;
 	    left: -15px;
 		width: 32px;
-	    height: 32px;	
+	    height: 32px;
 	    @include breakpoint($md){
 		    left: 36px;
 	    }
@@ -32,23 +32,23 @@
 	    border-radius: 50%;
 	    background-color: #EF6C00;
 	}
-	
+
 	.event{
 		position: relative;
 		padding-top: 24px;
 		padding-left: 30px;
-		h4 { 
+		h4 {
 			display: block;
-			font-size: 20px; 
+			font-size: 20px;
 			padding: 0px 0px 10px 0px;
 		}
-		span { 
+		span {
 			color: rgba(0, 0, 0, 0.75);
-			font-size: 16px; 
+			font-size: 16px;
 		}
 
 		@include breakpoint($md){
-			padding-left: 100px;	    	
+			padding-left: 100px;
 	    }
 		&:before {
 		    content: '';
@@ -74,7 +74,7 @@
 		&:before {
 		    left: -14px;
 		    width: 32px;
-		    height: 32px;	
+		    height: 32px;
 		    @include breakpoint($md){
 			    left: 36px;
 	    	}

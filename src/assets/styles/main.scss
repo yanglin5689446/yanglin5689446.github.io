@@ -1,11 +1,12 @@
 
 @import './constant';
 @import '~breakpoint-sass/stylesheets/_breakpoint';
+@import url('https://fonts.googleapis.com/css?family=Kanit|Noto+Sans+TC');
 
 body {
 	overflow-x: hidden;
-	font-family: 'Noto Sans TC', sans-serif, 'Roboto';
 	background: #EEEEEE;
+	font-family: 'Kanit', sans-serif;
 }
 
 a {
@@ -29,3 +30,10 @@ h1{
 	min-height: 60vh;
 }
 
+.chinese { font-family: 'Noto Sans TC', sans-serif, 'Roboto'; }
+
+.weight-light { font-weight: lighter; }
+.weight-normal { font-weight: normal; }
+.weight-bold { font-weight: bold; }
+.weight-bolder { font-weight: bolder; }
+.italic { font-style: italic ;}

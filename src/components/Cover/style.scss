@@ -3,11 +3,12 @@
 @import '~breakpoint-sass/stylesheets/_breakpoint';
 
 .cover {
+	transition: opacity 0.5s;
 	background-size: cover;
 	background-attachment: fixed;
 	@include breakpoint(0, $sm){ height: $cover-height-mobile;}
 	@include breakpoint($sm){ height: $cover-height; }
-	
+
 }
 
 .cover-wrapper{
@@ -34,4 +35,3 @@
 		}
 	}
 }
-

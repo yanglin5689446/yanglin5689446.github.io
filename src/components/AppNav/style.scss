@@ -7,8 +7,8 @@
 		height: $app-nav-height-mobile;
 		padding-top: calc(#{$app-nav-height-mobile} - 50px);
 	}
-	@include breakpoint($sm) { 
-		height: $app-nav-height; 
+	@include breakpoint($sm) {
+		height: $app-nav-height;
 		padding-top: 0px;
 		margin-bottom: 15px;
 	}
@@ -19,11 +19,11 @@
 .nav-item {
 	text-align: center;
 	font-size: 12px;
-
+	font-weight: bold;
+	color: black;
 	letter-spacing: 1px;
 	display: inline-block;
 	line-height: $app-nav-height;
-	cursor: pointer;
 	transition: all 0.3s ease;
 	&.active {
 		line-height: $app-nav-height - 10px;

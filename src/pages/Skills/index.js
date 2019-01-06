@@ -64,10 +64,10 @@ const Card = ({ degree, thumbnail, title }) => (
   </div>
 )
 
-const Index = () => (
+const Skills = () => (
   <div className='container px-3 py-5 p-md-5 skills main-content'>
     <div>
-      <h1 className='text-center text-md-left'>Skills</h1>
+      <h1 className='text-center text-md-left weight-bold'>Skills</h1>
       <div className='instruction my-4'>
         <span className='average mr-3' /> Average
         <br />
@@ -90,4 +90,4 @@ const Index = () => (
   </div>
 )
 
-export { Index }
+export default Skills

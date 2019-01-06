@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Event } from 'components/Milestones'
+import MilestonesComponent from 'components/Milestones'
 
 const events = [
   {
@@ -27,7 +27,7 @@ const events = [
     big: true,
     date: '2016/07',
     caption: '在 資工系計算機中心 擔任 TA',
-    content: '交大資工系上擁有自己的計算機中心，由學生自主維護系上的各式服務，包括linux/BSD工作站、網頁服務、資料庫 ... 等等。而系計中 TA 就是維護這些服務，分為碩士班丁組跟大學部 TA。我屬於負責維護系上網頁的 www 組以及管理系上 linux 工作站的 linux 組。' 
+    content: '交大資工系上擁有自己的計算機中心，由學生自主維護系上的各式服務，包括linux/BSD工作站、網頁服務、資料庫 ... 等等。而系計中 TA 就是維護這些服務，分為碩士班丁組跟大學部 TA。我屬於負責維護系上網頁的 www 組以及管理系上 linux 工作站的 linux 組。'
   },
   {
     date: '2016/08',
@@ -53,22 +53,32 @@ const events = [
     date: '2018/03',
     caption: '第二屆交大藝趣節 協助開發宣傳頁面',
   },
+  {
+    date: '2018/07',
+    caption: '開始在 五倍紅寶石 5xruby 實習',
+    content: '在五倍紅寶石實習兩個月，雖說當初投遞的是前端實習，不過實習期間練習使用 rails 居多。在這段時間也有自己研究一些有趣的東西，像是 Haskell - 一種純函式語言，主要是因為前端而對 functional programming 逐漸感興趣。',
+    big: true
+  },
+  {
+    date: '2018/09',
+    caption: '結束在 資工系計算機中心 的工作',
+    big: true
+  },
+  {
+    date: '2018/10',
+    caption: '開始在 Yourator新創職涯平台 工作',
+    big: true
+  },
 
 ]
 
-const Index = () => (
+const Milestones = () => (
   <div className='container px-3 py-5 p-md-5 main-content'>
     <div>
-      <h1 className='text-center text-md-left'>Milestones</h1>
-      <div className="milestones m-3">
-        { 
-          events.map((event, index) => (
-            <Event { ...event } key={ index } />
-          )) 
-        }
-      </div>
+      <h1 className='text-center text-md-left weight-bold'>Milestones</h1>
+      <MilestonesComponent events={events}/>
     </div>
   </div>
 )
 
-export { Index }
+export default Milestones
