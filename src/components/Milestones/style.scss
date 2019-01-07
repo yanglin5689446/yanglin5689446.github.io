@@ -37,14 +37,8 @@
 		position: relative;
 		padding-top: 24px;
 		padding-left: 30px;
-		h4 {
-			display: block;
-			font-size: 20px;
-			padding: 0px 0px 10px 0px;
-		}
 		span {
 			color: rgba(0, 0, 0, 0.75);
-			font-size: 16px;
 		}
 
 		@include breakpoint($md){
@@ -66,10 +60,7 @@
 		}
 	}
 	.event.big {
-		font-size: 18px;
-
-		h4 { font-size: 28px; }
-		span { font-size: 18px; }
+		span { font-size: 1.1rem; }
 
 		&:before {
 		    left: -14px;

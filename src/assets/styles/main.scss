@@ -3,6 +3,15 @@
 @import '~breakpoint-sass/stylesheets/_breakpoint';
 @import url('https://fonts.googleapis.com/css?family=Kanit|Noto+Sans+TC');
 
+html{
+	@include breakpoint(0, $md){
+		font-size: 12px;
+	}
+	@include breakpoint($md){
+		font-size: 16px;
+	}
+}
+
 body {
 	overflow-x: hidden;
 	background: #EEEEEE;
