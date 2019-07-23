@@ -34,7 +34,7 @@ class GalleryItem  extends React.Component {
     return (
       <div className='col-12 col-md-6 col-xl-4 my-3'>
         <div className={ this.state.popup ? 'item popup' : 'item' } >
-          <img src={ this.props.image } />
+          <img src={ this.props.image } alt='' />
 
           <div className='mask' >
             <div className='mask-overlay'>
@@ -54,13 +54,17 @@ class GalleryItem  extends React.Component {
               {
                 this.props.link == null ||
                 <div className='mask-icon'>
-                  <a href={ this.props.link } target='_blank'><i className="fa fa-link"/></a>
+                  <a href={ this.props.link } target='_blank' rel="noopener noreferrer">
+                    <i className="fa fa-link"/>
+                  </a>
                 </div>
               }
               {
                 this.props.source == null ||
                 <div className='mask-icon'>
-                  <a href={ this.props.source } target='_blank'><i className="fab fa-git"/></a>
+                  <a href={ this.props.source } target='_blank' rel="noopener noreferrer">
+                    <i className="fab fa-git"/>
+                  </a>
                 </div>
               }
             </div>

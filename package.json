@@ -6,6 +6,9 @@
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
     "classnames": "^2.2.5",
+    "eslint": "5",
+    "eslint-config-react-app": "^4.0.1",
+    "husky": "^3.0.1",
     "i18next": "^17.0.6",
     "i18next-browser-languagedetector": "^3.0.1",
     "lodash.startcase": "^4.4.0",
@@ -28,7 +31,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "$(npm bin)/eslint --ext .js --ext .jsx ./"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"

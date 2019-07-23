@@ -1,7 +1,6 @@
 
 import React from 'react'
 import ReactTooltip from 'react-tooltip'
-import Layout from 'layouts'
 import './style.scss'
 
 const SocialButtonLink = (props) => (
@@ -9,6 +8,7 @@ const SocialButtonLink = (props) => (
     data-tip={ props.tip }
     href={ props.url }
     target='_blank'
+    rel="noopener noreferrer"
     className='social-button-link'
   >
     <i

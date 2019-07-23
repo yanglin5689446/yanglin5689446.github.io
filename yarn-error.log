@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/yanglin/.config/yarn/global/node_modules/node/bin/node /usr/local/bin/yarn add breakpoins-sass
+  /Users/yanglin/.config/yarn/global/node_modules/node/bin/node /usr/local/bin/yarn add eslint
 
 PATH: 
-  /Users/yanglin/.rvm/gems/ruby-2.5.1/bin:/Users/yanglin/.rvm/gems/ruby-2.5.1@global/bin:/Users/yanglin/.rvm/rubies/ruby-2.5.1/bin:/Users/yanglin/.rvm/bin:/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/lib:/usr/local/include:/usr/local/mysql/bin:/Users/yanglin/.composer/vendor/bin:/Library/Frameworks/:/Users/yanglin/Library/Python/2.7/bin:/Users/yanglin/Library/Android/sdk/tools:/Users/yanglin/Library/Android/sdk/platform-tools
+  /Users/yanglin/.rvm/gems/ruby-2.5.1/bin:/Users/yanglin/.rvm/gems/ruby-2.5.1@global/bin:/Users/yanglin/.rvm/rubies/ruby-2.5.1/bin:/Users/yanglin/.rvm/bin:/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/lib:/usr/local/include:/usr/local/mysql/bin:/Users/yanglin/.composer/vendor/bin:/Library/Frameworks:/Users/yanglin/Library/Python/2.7/bin:/Users/yanglin/Library/Android/sdk/tools:/Users/yanglin/Library/Android/sdk/platform-tools
 
 Yarn version: 
   1.13.0
@@ -14,17 +14,12 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/breakpoins-sass: Not found
-      at Request.params.callback [as _callback] (/Users/yanglin/.config/yarn/global/node_modules/yarn/lib/cli.js:66255:18)
-      at Request.self.callback (/Users/yanglin/.config/yarn/global/node_modules/yarn/lib/cli.js:129397:22)
-      at Request.emit (events.js:197:13)
-      at Request.<anonymous> (/Users/yanglin/.config/yarn/global/node_modules/yarn/lib/cli.js:130369:10)
-      at Request.emit (events.js:197:13)
-      at IncomingMessage.<anonymous> (/Users/yanglin/.config/yarn/global/node_modules/yarn/lib/cli.js:130291:12)
-      at Object.onceWrapper (events.js:285:13)
-      at IncomingMessage.emit (events.js:202:15)
-      at endReadableNT (_stream_readable.js:1129:12)
-      at processTicksAndRejections (internal/process/next_tick.js:76:17)
+  SyntaxError: /Users/yanglin/Code/profile/package.json: Unexpected string in JSON at position 882
+      at JSON.parse (<anonymous>)
+      at /Users/yanglin/.config/yarn/global/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/yanglin/.config/yarn/global/node_modules/yarn/lib/cli.js:304:30)
+      at /Users/yanglin/.config/yarn/global/node_modules/yarn/lib/cli.js:315:13
 
 npm manifest: 
   {
@@ -33,6 +28,7 @@ npm manifest:
     "private": true,
     "author": "yanglin",
     "dependencies": {
+      "breakpoint-sass": "^2.7.1",
       "classnames": "^2.2.5",
       "i18next": "^17.0.6",
       "i18next-browser-languagedetector": "^3.0.1",
@@ -57,6 +53,7 @@ npm manifest:
       "build": "react-scripts build",
       "test": "react-scripts test",
       "eject": "react-scripts eject"
+      "lint": "$(npm bin)/eslint --ext .js --ext .jsx ./"
     },
     "eslintConfig": {
       "extends": "react-app"
@@ -2212,6 +2209,11 @@ Lockfile:
       snapdragon-node "^2.0.1"
       split-string "^3.0.2"
       to-regex "^3.0.1"
+  
+  breakpoint-sass@^2.7.1:
+    version "2.7.1"
+    resolved "https://registry.yarnpkg.com/breakpoint-sass/-/breakpoint-sass-2.7.1.tgz#8ef6c4744dcc25ba83d969b6c9a17e5daa29980a"
+    integrity sha1-jvbEdE3MJbqD2Wm2yaF+XaopmAo=
   
   brorand@^1.0.1:
     version "1.1.0"
