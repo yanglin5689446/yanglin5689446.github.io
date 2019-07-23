@@ -3,10 +3,14 @@ import { render } from 'react-dom'
 import Router from 'Router'
 import './assets/styles/main.scss'
 
+<<<<<<< HEAD
 const renderApp = () => render(
   <Router />,
   document.getElementById('app')
 )
+=======
+import './i18n'
+>>>>>>> Upgrade packages & add i18n support
 
 if (typeof (document) !== 'undefined' && window) {
   window.onload = () => {

@@ -36,8 +36,12 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "i18next": "^17.0.6",
+    "i18next-browser-languagedetector": "^3.0.1",
+    "lodash.startcase": "^4.4.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
+    "react-i18next": "^10.11.4",
     "react-redux": "^5.0.3",
     "react-responsive": "^5.0.0",
     "react-router": "^4.0.0",
