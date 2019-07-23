@@ -1,6 +1,7 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import linbox from 'assets/images/linbox.png'
+import { useTranslation } from 'react-i18next'
 import './style.scss'
 
 const portfolios = [
@@ -43,67 +44,66 @@ const portfolios = [
   },
 ]
 
-class GalleryItem  extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = { popup: false }
-  }
-  render(){
-    return (
-      <div className='col-12 col-md-6 col-xl-4 my-3'>
-        <div className={ this.state.popup ? 'item popup' : 'item' } >
-          <img src={ this.props.image } alt='' />
 
-          <div className='mask' >
-            <div className='mask-overlay'>
-              <div className='mask-text'>{ this.props.intro }</div>
-              <div
-                className={ this.state.popup ? 'd-none' : 'mask-icon' }
-                onClick={ () => this.setState({ popup: true }) }
-              >
-                <i className="fa fa-eye" />
-              </div>
-              <div
-                className={ this.state.popup ? 'mask-icon' : 'd-none' }
-                onClick={ () => this.setState({ popup: false }) }
-              >
-                <i className='fas fa-times'/>
-              </div>
-              {
-                this.props.link == null ||
-                <div className='mask-icon'>
-                  <a href={ this.props.link } target='_blank' rel="noopener noreferrer">
-                    <i className="fa fa-link"/>
-                  </a>
-                </div>
-              }
-              {
-                this.props.source == null ||
-                <div className='mask-icon'>
-                  <a href={ this.props.source } target='_blank' rel="noopener noreferrer">
-                    <i className="fab fa-git"/>
-                  </a>
-                </div>
-              }
+const GalleryItem = ({ image, intro, link, source }) => {
+  const [popup, updatePopup] = useState(false)
+  return (
+    <div className='col-12 col-md-6 col-xl-4 my-3'>
+      <div className={ popup ? 'item popup' : 'item' } >
+        <img src={ image } alt='' />
+
+        <div className='mask' >
+          <div className='mask-overlay'>
+            <div className='mask-text'>{ intro }</div>
+            <div
+              className={ popup ? 'd-none' : 'mask-icon' }
+              onClick={ () => updatePopup(true) }
+            >
+              <i className="fa fa-eye" />
             </div>
+            <div
+              className={ popup ? 'mask-icon' : 'd-none' }
+              onClick={ () => updatePopup(false) }
+            >
+              <i className='fas fa-times'/>
+            </div>
+            {
+              link == null ||
+              <div className='mask-icon'>
+                <a href={ link } target='_blank' rel="noopener noreferrer">
+                  <i className="fa fa-link"/>
+                </a>
+              </div>
+            }
+            {
+              source == null ||
+              <div className='mask-icon'>
+                <a href={ source } target='_blank' rel="noopener noreferrer">
+                  <i className="fab fa-git"/>
+                </a>
+              </div>
+            }
           </div>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
-const Portfolio = () => (
-  <div className='container px-3 py-5 p-md-5 main-content'>
-    <div>
-      <h1 className='text-center text-md-left weight-bold'>作品集</h1>
-      <div className='gallery row'>
-        {
-          portfolios.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
-        }
+const Portfolio = () => {
+  const { t } = useTranslation('portfolios')
+  return (
+    <div className='container px-3 py-5 p-md-5 main-content'>
+      <div>
+        <h1 className='text-center text-md-left weight-bold'>{ t('title') }</h1>
+        <div className='gallery row'>
+          {
+            portfolios.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
+          }
+        </div>
       </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default Portfolio

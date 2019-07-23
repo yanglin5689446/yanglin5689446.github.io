@@ -8,7 +8,11 @@
 	background-attachment: fixed;
 	@include breakpoint(0, $sm){ height: $cover-height-mobile;}
 	@include breakpoint($sm){ height: $cover-height; }
-
+	.switch-language-container {
+		position: absolute;
+		right: 2rem;
+		top: 1rem;
+	}
 }
 
 .cover-wrapper{
