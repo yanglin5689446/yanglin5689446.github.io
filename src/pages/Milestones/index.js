@@ -1,6 +1,7 @@
 
 import React from 'react'
 import MilestonesComponent from 'components/Milestones'
+import { useTranslation } from 'react-i18next'
 
 const events = [
   {
@@ -87,13 +88,16 @@ const events = [
 
 ]
 
-const Milestones = () => (
-  <div className='container px-3 py-5 p-md-5 main-content'>
-    <div>
-      <h1 className='text-center text-md-left weight-bold'>里程碑</h1>
-      <MilestonesComponent events={events}/>
+const Milestones = () => {
+  const { t } = useTranslation('milestones')
+  return (
+    <div className='container px-3 py-5 p-md-5 main-content'>
+      <div>
+        <h1 className='text-center text-md-left weight-bold'>{ t('title') }</h1>
+        <MilestonesComponent events={events}/>
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default Milestones
