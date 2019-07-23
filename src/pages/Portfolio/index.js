@@ -1,5 +1,6 @@
 
 import React from 'react'
+import linbox from 'assets/images/linbox.png'
 import './style.scss'
 
 const portfolios = [
@@ -21,7 +22,24 @@ const portfolios = [
   {
     image: 'https://imgur.com/cGgvgPZ.png',
     link: 'https://english-contest.ntcu.edu.tw/',
-    intro: '台中教育大學英文系競賽網頁平台，供學生上傳競賽作品並開放系外人士票選。我負責後端邏輯部分。',
+    intro: '台中教育大學英文系競賽網頁平台，供學生上傳競賽作品並開放系外人士票選。',
+  },
+  {
+    image: 'https://miro.medium.com/max/700/1*lB98vV1Bx0fT5LhrWF_FxQ.png',
+    link: 'https://js-final-2018.herokuapp.com/',
+    source: 'https://github.com/yanglin5689446/pixi-practice',
+    intro: '修課的期末 project ，基於 socket.io 和 pixi.js 的 MMO DOTA JS 小遊戲。',
+  },
+  {
+    image: 'https://i.imgur.com/I9uezQv.png',
+    link: 'https://yanglin5689446.github.io/akachen/',
+    intro: '大四上學期時接案開發的一個介紹網頁。',
+  },
+  {
+    image: linbox,
+    link: 'https://linbox.herokuapp.com/',
+    source: 'https://yanglin5689446.github.io/linbox/',
+    intro: '因為 2019 年 google inbox 關閉，而我又是忠實使用者，因此訪 inbox 的介面做了一個功能類似的 webapp ，命名為 linbox。',
   },
 ]
 
