@@ -39,7 +39,7 @@ const portfolios = [
     image: linbox,
     link: 'https://linbox.herokuapp.com/',
     source: 'https://yanglin5689446.github.io/linbox/',
-    intro: '因為 2019 年 google inbox 關閉，而我又是忠實使用者，因此訪 inbox 的介面做了一個功能類似的 webapp ，命名為 linbox。',
+    intro: '因 2019 年 google inbox 關閉，而我是重度用戶，因此仿 inbox 的介面做了一個功能類似的 webapp ，命名為 linbox。',
   },
 ]
 
