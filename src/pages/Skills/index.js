@@ -76,11 +76,11 @@ const Card = ({ degree, thumbnail, title }) => (
 const Skills = () => (
   <div className='container px-3 py-5 p-md-5 skills main-content'>
     <div>
-      <h1 className='text-center text-md-left weight-bold'>Skills</h1>
+      <h1 className='text-center text-md-left weight-bold'>工作技能</h1>
       <div className='instruction my-4'>
-        <span className='average mr-3' /> Average
+        <span className='average mr-3' /> 普通
         <br />
-        <span className='fair mr-3' /> Fair
+        <span className='fair mr-3' /> 略懂
 
       </div>
       {

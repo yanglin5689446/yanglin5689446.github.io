@@ -23,14 +23,14 @@ const Index = () => (
     <ReactTooltip effect='solid' />
     <div className='container px-3 py-5 p-md-5 index main-content'>
       <div>
-        <h2 className='title my-2 ml-3 h1'>
-          About
+        <h2 className='title my-2 ml-3'>
+          關於我
         </h2>
         <p className='mx-md-5 my-3 pb-3 h5 chinese'>
           我的名字叫林子暘，22歲。住在新北市西南部的新莊區一帶，未婚。我在友睿資訊服務。每天都要上班到晚上7點才能回家。我不抽煙，酒僅止於淺嚐。晚上12點睡，每天要睡足8個小時。睡前，我一定喝一杯溫牛奶，然後做20分鐘的柔軟操，上了床，馬上熟睡。一覺到天亮，絕不把疲勞和壓力留到第二天。醫生都說我很正常。
         </p>
         <h2 className='title my-2 ml-3'>
-          Interest
+          個人興趣
         </h2>
         <div className='m-4 pl-2 pb-3 chinese'>
           <p><i className='fa fa-desktop mx-2'/>跟前、後端有關的任何技術</p>
@@ -40,8 +40,8 @@ const Index = () => (
           <p><i className='fas fa-tv mx-2'/>動畫、電影、日劇，美劇</p>
           <p><i className='fa fa-music mx-2'/>基本上任何類型的音樂都聽，特愛老搖滾和金屬樂，會彈一點電吉他</p>
         </div>
-        <h2 className='title my-2 ml-3 h1'>
-          Contacts
+        <h2 className='title my-2 ml-3'>
+          聯繫我
         </h2>
         <div className='m-4 pb-3'>
           <SocialButtonLink

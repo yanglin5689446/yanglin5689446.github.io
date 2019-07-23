@@ -90,7 +90,7 @@ const events = [
 const Milestones = () => (
   <div className='container px-3 py-5 p-md-5 main-content'>
     <div>
-      <h1 className='text-center text-md-left weight-bold'>Milestones</h1>
+      <h1 className='text-center text-md-left weight-bold'>里程碑</h1>
       <MilestonesComponent events={events}/>
     </div>
   </div>

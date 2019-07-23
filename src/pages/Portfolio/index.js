@@ -96,7 +96,7 @@ class GalleryItem  extends React.Component {
 const Portfolio = () => (
   <div className='container px-3 py-5 p-md-5 main-content'>
     <div>
-      <h1 className='text-center text-md-left weight-bold'>Portfolios</h1>
+      <h1 className='text-center text-md-left weight-bold'>作品集</h1>
       <div className='gallery row'>
         {
           portfolios.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
