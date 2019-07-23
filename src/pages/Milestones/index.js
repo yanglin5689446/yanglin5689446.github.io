@@ -4,9 +4,9 @@ import MilestonesComponent from 'components/Milestones'
 
 const events = [
   {
-    big: true,
     date: '2015/06',
     caption: '自 台中一中 畢業',
+    big: true,
   },
   {
     date: '2015/08',
@@ -14,9 +14,9 @@ const events = [
     content: '2015 臺大黑客松是第三屆台大黑客松。本來以為黑客松只要去發想然後自由創作，結果發現大家好像都有備而來，得獎的作品的完成度都相當的高，根本不像三天之內做得出來的XD。我們組做了一個不怎麼實用的 chrome 小插件，算是去見見世面。'
   },
   {
-    big: true,
     date: '2015/09',
     caption: '在 國立交通大學 就讀 資訊工程學系',
+    big: true,
   },
   {
     date: '2016/02',
@@ -24,10 +24,10 @@ const events = [
     content: '名字叫黑客松，可是沒有食物、沒有黑客，也沒有馬拉松，只有提簡報的簡報松。現場準備了一些開發板，結果我們要做的事卻是針對一塊台北市府的閒置土地提土地利用計畫。兩天內一行程式碼都沒有寫，只提了一個垂直農場概念的簡報，沒想到卻意外入圍了，可能是我們簡報做得不錯看吧。'
   },
   {
-    big: true,
     date: '2016/07',
     caption: '在 資工系計算機中心 擔任 TA',
-    content: '交大資工系上擁有自己的計算機中心，由學生自主維護系上的各式服務，包括linux/BSD工作站、網頁服務、資料庫 ... 等等。而系計中 TA 就是維護這些服務，分為碩士班丁組跟大學部 TA。我屬於負責維護系上網頁的 www 組以及管理系上 linux 工作站的 linux 組。'
+    content: '交大資工系上擁有自己的計算機中心，由學生自主維護系上的各式服務，包括linux/BSD工作站、網頁服務、資料庫 ... 等等。而系計中 TA 就是維護這些服務，分為碩士班丁組跟大學部 TA。我屬於負責維護系上網頁的 www 組以及管理系上 linux 工作站的 linux 組。',
+    big: true,
   },
   {
     date: '2016/08',
@@ -45,9 +45,9 @@ const events = [
     content: '安謀思創是使用 ARM 的 stm32 系列開發板，在四個月內作出一項作品的比賽。我和室友配合正在研究的主題，想做出使用 3D 列印加上市面上買的材料就能自製的六足機器人。不過因為重量的計算錯誤，最後的機器人雖然有生產出來卻無法順利地移動，因此最後只能悲劇收場。'
   },
   {
-    big: true,
     date: '2018/01',
     caption: '開始在 賦睿科技 的工作',
+    big: true,
   },
   {
     date: '2018/03',
@@ -60,6 +60,10 @@ const events = [
     big: true
   },
   {
+    date: '2018/08',
+    caption: '參加 2018 COSCUP',
+  },
+  {
     date: '2018/09',
     caption: '結束在 資工系計算機中心 的工作',
     big: true
@@ -69,13 +73,24 @@ const events = [
     caption: '開始在 Yourator新創職涯平台 工作',
     big: true
   },
+  {
+    date: '2019/02',
+    caption: '自交大資工畢業(提前一學期)',
+    big: true
+  },
+  {
+    date: '2019/08',
+    caption: '在 COSCUP 擔任講者',
+    content: '這次在 COSCUP 投稿了「帶你讀源碼」的議軌，主題是導讀 redux 的原始碼，因為那段時間剛好有在 trace 一些 react 生態系的原始碼，剛好 2019 年有這樣一個以讀原始碼為主的議軌，於是就投遞看看，然後就有點出乎意料的上了',
+    big: true
+  },
 
 ]
 
 const Milestones = () => (
   <div className='container px-3 py-5 p-md-5 main-content'>
     <div>
-      <h1 className='text-center text-md-left weight-bold'>Milestones</h1>
+      <h1 className='text-center text-md-left weight-bold'>里程碑</h1>
       <MilestonesComponent events={events}/>
     </div>
   </div>

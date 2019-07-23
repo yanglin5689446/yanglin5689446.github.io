@@ -6,10 +6,10 @@ import MediaQuery from 'react-responsive'
 import './style.scss'
 
 const navItems = [
-  { url: '/', icon:'user', label: 'About' },
-  { url: '/milestones', icon:'tasks', label: 'Milestones' },
-  { url: '/skills', icon:'briefcase', label: 'Skills' },
-  { url: '/portforlio', icon:'paint-brush', label: 'Portforlios' },
+  { url: '/', icon:'user', label: '關於我' },
+  { url: '/milestones', icon:'tasks', label: '學經歷' },
+  { url: '/skills', icon:'briefcase', label: '工作技能' },
+  { url: '/portfolios', icon:'paint-brush', label: '作品集' },
 ]
 
 const NavItem = withRouter(({ url, children, mobile }) => (

@@ -1,10 +1,10 @@
 
 import React from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Layout from 'layouts'
 import Index from 'pages/Index'
 import Milestones from 'pages/Milestones'
-import Portforlio from 'pages/Portforlio'
+import Portfolio from 'pages/Portfolio'
 import Skills from 'pages/Skills'
 
 
@@ -15,7 +15,7 @@ class RootRouter extends React.Component {
         <Layout>
           <Route exact path='/' component={ Index } />
           <Route exact path='/milestones' component={ Milestones } />
-          <Route exact path='/portforlio' component={ Portforlio } />
+          <Route exact path='/portfolios' component={ Portfolio } />
           <Route exact path='/skills' component={ Skills } />
         </Layout>
       </Router>

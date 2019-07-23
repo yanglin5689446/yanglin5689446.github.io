@@ -1,8 +1,9 @@
 
 import React from 'react'
+import linbox from 'assets/images/linbox.png'
 import './style.scss'
 
-const portforlios = [
+const portfolios = [
   {
     image: 'https://imgur.com/tKIyw9B.png',
     intro: '2017 年安謀思創比賽作品，使用 Google SketchUp + 3D 列印做六足機器人模型。',
@@ -21,7 +22,24 @@ const portforlios = [
   {
     image: 'https://imgur.com/cGgvgPZ.png',
     link: 'https://english-contest.ntcu.edu.tw/',
-    intro: '台中教育大學英文系競賽網頁平台，供學生上傳競賽作品並開放系外人士票選。我負責後端邏輯部分。',
+    intro: '台中教育大學英文系競賽網頁平台，供學生上傳競賽作品並開放系外人士票選。',
+  },
+  {
+    image: 'https://miro.medium.com/max/700/1*lB98vV1Bx0fT5LhrWF_FxQ.png',
+    link: 'https://js-final-2018.herokuapp.com/',
+    source: 'https://github.com/yanglin5689446/pixi-practice',
+    intro: '修課的期末 project ，基於 socket.io 和 pixi.js 的 MMO DOTA JS 小遊戲。',
+  },
+  {
+    image: 'https://i.imgur.com/I9uezQv.png',
+    link: 'https://yanglin5689446.github.io/akachen/',
+    intro: '大四上學期時接案開發的一個介紹網頁。',
+  },
+  {
+    image: linbox,
+    link: 'https://linbox.herokuapp.com/',
+    source: 'https://yanglin5689446.github.io/linbox/',
+    intro: '因 2019 年 google inbox 關閉，而我是重度用戶，因此仿 inbox 的介面做了一個功能類似的 webapp ，命名為 linbox。',
   },
 ]
 
@@ -34,7 +52,7 @@ class GalleryItem  extends React.Component {
     return (
       <div className='col-12 col-md-6 col-xl-4 my-3'>
         <div className={ this.state.popup ? 'item popup' : 'item' } >
-          <img src={ this.props.image } />
+          <img src={ this.props.image } alt='' />
 
           <div className='mask' >
             <div className='mask-overlay'>
@@ -54,13 +72,17 @@ class GalleryItem  extends React.Component {
               {
                 this.props.link == null ||
                 <div className='mask-icon'>
-                  <a href={ this.props.link } target='_blank'><i className="fa fa-link"/></a>
+                  <a href={ this.props.link } target='_blank' rel="noopener noreferrer">
+                    <i className="fa fa-link"/>
+                  </a>
                 </div>
               }
               {
                 this.props.source == null ||
                 <div className='mask-icon'>
-                  <a href={ this.props.source } target='_blank'><i className="fab fa-git"/></a>
+                  <a href={ this.props.source } target='_blank' rel="noopener noreferrer">
+                    <i className="fab fa-git"/>
+                  </a>
                 </div>
               }
             </div>
@@ -71,17 +93,17 @@ class GalleryItem  extends React.Component {
   }
 }
 
-const Portforlio = () => (
+const Portfolio = () => (
   <div className='container px-3 py-5 p-md-5 main-content'>
     <div>
-      <h1 className='text-center text-md-left weight-bold'>Portforlios</h1>
+      <h1 className='text-center text-md-left weight-bold'>作品集</h1>
       <div className='gallery row'>
         {
-          portforlios.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
+          portfolios.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
         }
       </div>
     </div>
   </div>
 )
 
-export default Portforlio
+export default Portfolio

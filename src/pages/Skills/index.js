@@ -14,6 +14,7 @@ const skillSet = {
     { title: 'C++', degree: 'average', thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/2000px-ISO_C%2B%2B_Logo.svg.png'},
     { title: 'Ruby', degree: 'average', thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png'},
     { title: 'Shell Script', thumbnail: 'https://i.pinimg.com/originals/24/e0/a3/24e0a35fd1bee2de25e10f84cbffe2b8.png'},
+    { title: 'Haskell', degree: 'fair', thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg'},
   ],
   DevOps: [
     { title: 'Travis CI', degree: 'average', thumbnail: 'https://cdn.freebiesupply.com/logos/thumbs/2x/travis-ci-logo.png' },
@@ -22,6 +23,8 @@ const skillSet = {
     { title: 'Docker', degree: 'fair', thumbnail: 'https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png' },
     { title: 'Kubernetes', degree: 'fair', thumbnail: 'https://camo.githubusercontent.com/aac1abbbad21d146bb36d7ef511d50a7bd544bb9/68747470733a2f2f7777772e6d6972616e7469732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031362f30322f4b756265726e657465732e706e67' },
     { title: 'OpenShift', degree: 'fair', thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/OpenShift-LogoType.svg/2000px-OpenShift-LogoType.svg.png' },
+    { title: 'AWS', degree: 'fair', thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/512px-Amazon_Web_Services_Logo.svg.png' },
+    { title: 'Heroku', thumbnail: 'https://res.cloudinary.com/practicaldev/image/fetch/s--K2q0A5SX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/2elgd5zp07wkeilkna63.png' },
   ],
   Backend: [
     { title: 'Laravel', degree: 'average', thumbnail: 'http://logonoid.com/images/laravel-logo.png' },
@@ -42,9 +45,11 @@ const skillSet = {
     { title: 'Bootstrap 4', thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg' },
     { title: 'Bulma', thumbnail: 'https://www.saashub.com/images/app/service_logos/6/4ad2b9991817/large.png?1525414082' },
     { title: 'SASS', thumbnail: 'https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png' },
+    { title: 'PixiJS', degree: 'average', thumbnail: 'https://camo.githubusercontent.com/1951cee65809e4c7749b0bf79e10dfe3da932635/687474703a2f2f706978696a732e646f776e6c6f61642f706978696a732d6c6f676f2e737667' },
+    { title: 'Bulma', thumbnail: 'https://dme8nb6778xpo.cloudfront.net/images/app/service_logos/6/4ad2b9991817/large.png?1525414082' },
   ],
   Design: [
-    { title: 'Sketch', degree: 'fair', thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Sketch_logo_frame.svg/2000px-Sketch_logo_frame.svg.png' },
+    { title: 'Sketch', degree: 'fair', thumbnail: 'https://www.sketch.com/images/pages/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' },
     { title: 'Material Design', thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Material_Design_Logo.svg/2000px-Google_Material_Design_Logo.svg.png' },
   ],
   Mobile: [
@@ -71,11 +76,11 @@ const Card = ({ degree, thumbnail, title }) => (
 const Skills = () => (
   <div className='container px-3 py-5 p-md-5 skills main-content'>
     <div>
-      <h1 className='text-center text-md-left weight-bold'>Skills</h1>
+      <h1 className='text-center text-md-left weight-bold'>工作技能</h1>
       <div className='instruction my-4'>
-        <span className='average mr-3' /> Average
+        <span className='average mr-3' /> 普通
         <br />
-        <span className='fair mr-3' /> Fair
+        <span className='fair mr-3' /> 略懂
 
       </div>
       {
