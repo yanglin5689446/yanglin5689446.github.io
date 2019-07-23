@@ -1,8 +1,8 @@
 import i18n from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
-import startCase from 'lodash.startCase'
-import resources from 'lang'
+import startCase from 'lodash.startcase'
+import resources from './lang'
 
 const detectionOptions = {
   // order and from where user language should be detected

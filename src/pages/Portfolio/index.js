@@ -2,7 +2,7 @@
 import React from 'react'
 import './style.scss'
 
-const portforlios = [
+const portfolios = [
   {
     image: 'https://imgur.com/tKIyw9B.png',
     intro: '2017 年安謀思創比賽作品，使用 Google SketchUp + 3D 列印做六足機器人模型。',
@@ -71,17 +71,17 @@ class GalleryItem  extends React.Component {
   }
 }
 
-const Portforlio = () => (
+const Portfolio = () => (
   <div className='container px-3 py-5 p-md-5 main-content'>
     <div>
-      <h1 className='text-center text-md-left weight-bold'>Portforlios</h1>
+      <h1 className='text-center text-md-left weight-bold'>Portfolios</h1>
       <div className='gallery row'>
         {
-          portforlios.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
+          portfolios.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
         }
       </div>
     </div>
   </div>
 )
 
-export default Portforlio
+export default Portfolio
