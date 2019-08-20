@@ -4,7 +4,7 @@ import linbox from 'assets/images/linbox.png'
 import { useTranslation } from 'react-i18next'
 import './style.scss'
 
-const portfolios = [
+const portfolio = [
   {
     image: 'https://imgur.com/tKIyw9B.png',
     intro: {
@@ -115,14 +115,14 @@ const GalleryItem = ({ image, intro, link, source }) => {
 }
 
 const Portfolio = () => {
-  const { t } = useTranslation('portfolios')
+  const { t } = useTranslation('portfolio')
   return (
     <div className='container px-3 py-5 p-md-5 main-content'>
       <div>
         <h1 className='text-center text-md-left weight-bold'>{ t('title') }</h1>
         <div className='gallery row'>
           {
-            portfolios.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
+            portfolio.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
           }
         </div>
       </div>

@@ -15,7 +15,7 @@ class RootRouter extends React.Component {
         <Layout>
           <Route exact path='/' component={ Index } />
           <Route exact path='/milestones' component={ Milestones } />
-          <Route exact path='/portfolios' component={ Portfolio } />
+          <Route exact path='/portfolio' component={ Portfolio } />
           <Route exact path='/skills' component={ Skills } />
         </Layout>
       </Router>

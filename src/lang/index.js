@@ -5,7 +5,7 @@ export default {
       about: 'About',
       milestones: 'Milestones',
       skills: 'Skills',
-      portfolios: 'Portfolios',
+      portfolio: 'Portfolio',
     },
     about: {
       title: 'About',
@@ -41,8 +41,8 @@ export default {
         misc: 'MISC',
       },
     },
-    portfolios: {
-      title: 'Portforlios',
+    portfolio: {
+      title: 'Portfolio',
     }
   },
   zh: {
@@ -50,7 +50,7 @@ export default {
       about: '關於我',
       milestones: '學經歷',
       skills: '工作技能',
-      portfolios: '作品集',
+      portfolio: '作品集',
     },
     about: {
       title: '關於我',
@@ -86,7 +86,7 @@ export default {
         misc: '其他',
       },
     },
-    portfolios: {
+    portfolio: {
       title: '作品集',
     }
   }

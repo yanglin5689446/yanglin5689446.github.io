@@ -11,7 +11,7 @@ const navItems = [
   { url: '/', icon:'user', label: 'about' },
   { url: '/milestones', icon:'tasks', label: 'milestones' },
   { url: '/skills', icon:'briefcase', label: 'skills' },
-  { url: '/portfolios', icon:'paint-brush', label: 'portfolios' },
+  { url: '/portfolio', icon:'paint-brush', label: 'portfolio' },
 ]
 
 const NavItem = withRouter(({ url, children, mobile }) => (
