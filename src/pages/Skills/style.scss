@@ -23,11 +23,48 @@
 			width: 5rem;
 		}
 	}
-	.instruction {
-		span { display: inline-block; width: 32px; height: 16px; }
-		span.average {background-color: #FFA726; }
-		span.fair { background-color: #9E9E9E; }
-	}
 	.card.average {  box-shadow: inset 0px 0px 0px 2px #FFA726; }
 	.card.fair{ box-shadow: inset 0px 0px 0px 2px #9E9E9E; }
+	// chart
+	.chart-container {
+		@include breakpoint(0, $sm){
+			width: 90vw;
+			height: 90vw;
+		}
+		@include breakpoint($sm, $md){
+			width: 400px;
+			height: 400px;
+		}
+		@include breakpoint($md, $lg){
+			width: 600px;
+			height: 600px;
+		}
+		@include breakpoint($lg, $xl){
+			width: 800px;
+			height: 800px;
+		}
+		width: 1000px;
+		height: 1000px;
+		margin: auto;
+	}
+	svg {
+		margin:auto;
+		display:block;
+	}
+	.circle-overlay {
+		font-size: 16px;
+		border-radius: 50%;
+		position: absolute;
+		overflow: hidden;
+	}
+	.circle-overlay__inner {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+	}
+	.circle-overlay__title {
+		text-align: center;
+		font-size: 1rem;
+		margin-top: 1rem;
+	}
 }

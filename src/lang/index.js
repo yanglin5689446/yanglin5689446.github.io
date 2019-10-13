@@ -71,10 +71,6 @@ export default {
     },
     skills: {
       title: '工作技能',
-      degrees: {
-        average: '普通',
-        fair: '略懂',
-      },
       category: {
         language: '程式語言',
         devops: '開發維運',
