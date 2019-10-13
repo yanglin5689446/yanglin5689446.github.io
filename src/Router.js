@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 import Layout from 'layouts'
 import Index from 'pages/Index'
 import Milestones from 'pages/Milestones'
