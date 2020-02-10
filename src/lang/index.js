@@ -9,7 +9,7 @@ export default {
     },
     about: {
       title: 'About',
-      introduction: "My name is Tzu-Yang, Lin. I'm 22 years old. My house is in the southwest section of Xinzhuang, where all the villas are, and I am not married. I work as an employee for Yourator, and I get home every day by 7 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 12 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up.",
+      introduction: "An engineer that mainly focuses on web development, specifically ReactJS. Consider myself a frontend engineer, but have interest in a variety of different domains such as: Backend, Database, CI/CD, Test/Integration, System Administration, security, App development. I like to make products and being fascinating by the process of iterating and gradually optimizing an useful product, thus one of my life goal is to build a product that can make an impact to the majority.",
       interests: {
         title: 'Interests',
         '0': 'Any web-related technology, especially frontend & backend',
@@ -42,7 +42,8 @@ export default {
       },
     },
     portfolio: {
-      title: 'Portfolio',
+      portfolio: 'Portfolio',
+      fanPage: 'Fan Page',
     }
   },
   zh: {
@@ -54,10 +55,10 @@ export default {
     },
     about: {
       title: '關於我',
-      introduction: '我的名字叫林子暘，22歲。住在新北市西南部的新莊區一帶，未婚。我在友睿資訊服務。每天都要上班到晚上7點才能回家。我不抽煙，酒僅止於淺嚐。晚上12點睡，每天要睡足8個小時。睡前，我一定喝一杯溫牛奶，然後做20分鐘的柔軟操，上了床，馬上熟睡。一覺到天亮，絕不把疲勞和壓力留到第二天。醫生都說我很正常。',
+      introduction: '專攻網頁前端開發的工程師，主力使用的工具是 ReactJS。雖然以前端工程師自居，但是對於後端、資料庫、CI/CD、測試整合、系統管理、資安、App 開發也有涉獵。喜歡做產品，對於逐步迭代、打造出可以使用的產品的這個過程十分著迷，也以可以做出影響世界的產品自許。',
       interests: {
         title: '個人興趣',
-        '0': '跟前、後端有關的任何技術',
+        '0': '跟網頁前、後端有關的任何技術',
         '1': '開發流程、DevOps、自動化部屬/測試',
         '2': '略懂 Arduino 跟一些基礎 MCU',
         '3': '寫出簡潔、高可讀性、高效能的程式碼',
@@ -83,7 +84,8 @@ export default {
       },
     },
     portfolio: {
-      title: '作品集',
+      portfolio: '作品集',
+      fanPage: '粉絲專頁',
     }
   }
 }

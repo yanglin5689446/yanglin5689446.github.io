@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import linbox from 'assets/images/linbox.png'
+import freeCell from 'assets/images/freeCell.png'
 import { useTranslation } from 'react-i18next'
 import './style.scss'
 
@@ -56,11 +57,20 @@ const portfolio = [
   },
   {
     image: linbox,
-    link: 'https://linbox.herokuapp.com/',
-    source: 'https://yanglin5689446.github.io/linbox/',
+    link: 'https://inbox.yanglin.rocks/',
+    source: 'https://github.com/yanglin5689446/linbox',
     intro: {
       zh: '因 2019 年 google inbox 關閉，而我是重度用戶，因此仿 inbox 的介面做了一個功能類似的 webapp ，命名為 linbox。',
       en: "Since google inbox was shut down bu google in 2019 and I'm a big fan of it, I build a forgery webapp with google API and mimic inbox's UI and name it 'linbox'",
+    },
+  },
+  {
+    image: freeCell,
+    link: 'https://yanglin.rocks/the-f2e-2019/week2/',
+    source: 'https://github.com/yanglin5689446/the-f2e-2019/tree/master/week2',
+    intro: {
+      zh: '2019 年參加六角學院的 the-f2e-2019 活動做的一個新接龍遊戲，使用 HTML5 drag API',
+      en: 'A simple free cell game using HTML drag API',
     },
   },
 ]
@@ -119,12 +129,22 @@ const Portfolio = () => {
   return (
     <div className='container px-3 py-5 p-md-5 main-content'>
       <div>
-        <h1 className='text-center text-md-left weight-bold'>{ t('title') }</h1>
+        <h1 className='text-center text-md-left weight-bold'>{ t('portfolio') }</h1>
         <div className='gallery row'>
           {
             portfolio.map( (item, index) => (<GalleryItem { ...item } key={index} />) )
           }
         </div>
+        <h1 className='text-center text-md-left weight-bold'>{ t('fanPage') }</h1>
+        <div className="row">
+          <h2 className="pl-5">
+            <a href="http://facebook.com/103934994422018" target="_blank" rel="noopener noreferrer">
+              暘暘程式頻道
+            </a>
+          </h2>
+
+        </div>
+
       </div>
     </div>
   )

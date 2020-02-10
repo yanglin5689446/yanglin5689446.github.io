@@ -155,6 +155,14 @@ const events = [
     },
     big: true
   },
+  {
+    date: '2020/01',
+    caption: {
+      zh: '離開 Yourator 新創職涯平台的工作',
+      en: 'Left job at Yourator',
+    },
+    big: true
+  },
 
 ]
 

@@ -49,7 +49,7 @@ const Index = () => {
           <div className='m-4 pb-3'>
             <SocialButtonLink
               tip='yanglin5689446'
-              url='https://www.facebook.com/yanglin5689446'
+              url='https://www.facebook.com/iamyanglin'
               icon='fab fa-facebook'
               style={{ color: '#395CA9'}}
             />

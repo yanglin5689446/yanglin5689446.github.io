@@ -16,7 +16,7 @@ const skillSet = [
   { category: 'language', title: 'Ruby',            value: 80,  thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png'},
   { category: 'language', title: 'Shell Script',    value: 50,  thumbnail: 'https://i.pinimg.com/originals/24/e0/a3/24e0a35fd1bee2de25e10f84cbffe2b8.png'},
   { category: 'language', title: 'Haskell',         value: 20,  thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg'},
-  { category: 'devops',   title: 'Travis CI',       value: 30,  thumbnail: 'https://cdn.freebiesupply.com/logos/thumbs/2x/travis-ci-logo.png' },
+  { category: 'devops',   title: 'Travis CI',       value: 30,  thumbnail: 'https://travis-ci.com/images/logos/Tessa-1.png' },
   { category: 'devops',   title: 'Gitlab CI',       value: 30,  thumbnail: 'https://docs.gitlab.com/assets/images/gitlab-logo.svg' },
   { category: 'devops',   title: 'Heroku',          value: 40,  thumbnail: 'https://img.icons8.com/color/1600/heroku.png' },
   { category: 'devops',   title: 'Docker',          value: 30,  thumbnail: 'https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png' },
@@ -34,7 +34,7 @@ const skillSet = [
   { category: 'frontend', title: 'Redux',           value: 100, thumbnail: 'https://cdn-images-1.medium.com/max/1200/0*U2DmhXYumRyXH6X1.png' },
   { category: 'frontend', title: 'JQuery',          value: 80,  thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/JQuery_logo_text.svg/2000px-JQuery_logo_text.svg.png' },
   { category: 'frontend', title: 'PixiJS',          value: 50,  thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmsEOMCzJyFyYaGeA6tZTwPOKzoO7Xm7-AdR_7uz6_zk7pfnO9' },
-  { category: 'frontend', title: 'Bootstrap 4',     value: 100, thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg' },
+  { category: 'frontend', title: 'Bootstrap 4',     value: 100, thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg' },
   { category: 'frontend', title: 'Bulma',           value: 100, thumbnail: 'https://www.saashub.com/images/app/service_logos/6/4ad2b9991817/large.png?1525414082' },
   { category: 'frontend', title: 'SASS',            value: 90,  thumbnail: 'https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png' },
   { category: 'design',   title: 'Sketch',          value: 50,  thumbnail: 'https://www.sketch.com/images/pages/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' },
@@ -51,19 +51,19 @@ const Skills = () => {
   const d3Variables = useRef({})
   useEffect(() => {
     // inspired by https://github.com/trongthanh/techstack
-    let { 
-      svg, 
-      width, 
-      height, 
-      centerX, 
-      centerY, 
-      strength, 
-      focusedNode, 
-      format, 
-      scaleColor, 
-      pack, 
-      forceCollide, 
-      simulation, 
+    let {
+      svg,
+      width,
+      height,
+      centerX,
+      centerY,
+      strength,
+      focusedNode,
+      format,
+      scaleColor,
+      pack,
+      forceCollide,
+      simulation,
       root
     } = d3Variables.current
     svg = d3.select('svg')
@@ -158,7 +158,7 @@ const Skills = () => {
 			.attr('width', d => d.radius * 2 * 0.4)
 		node.append('title')
 			.text(d => (d.category + '::' + d.title + '\n' + format(d.value)))
-		
+
 		let infoBox = node.append('foreignObject')
 			.classed('circle-overlay hidden', true)
 			.attr('x', -width * 0.5 * 0.1)
@@ -206,18 +206,18 @@ const Skills = () => {
     }
     d3Variables.current = {
       ...d3Variables.current,
-      svg, 
-      width, 
-      height, 
-      centerX, 
-      centerY, 
-      strength, 
-      focusedNode, 
-      format, 
-      scaleColor, 
-      pack, 
-      forceCollide, 
-      simulation, 
+      svg,
+      width,
+      height,
+      centerX,
+      centerY,
+      strength,
+      focusedNode,
+      format,
+      scaleColor,
+      pack,
+      forceCollide,
+      simulation,
       root,
       node,
     }
@@ -239,8 +239,8 @@ const Skills = () => {
       .call(legendOrdinal)
     d3Variables.current = {
       ...d3Variables.current,
-      svg, 
-      scaleColor, 
+      svg,
+      scaleColor,
       node,
     }
   }, [t, i18n.language])
